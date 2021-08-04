@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AnnVasilyeva/neon_button.git/static/css/main.e23629c4.chunk.css",
+    "main.js": "/AnnVasilyeva/neon_button.git/static/js/main.efa09587.chunk.js",
+    "main.js.map": "/AnnVasilyeva/neon_button.git/static/js/main.efa09587.chunk.js.map",
+    "runtime-main.js": "/AnnVasilyeva/neon_button.git/static/js/runtime-main.27b22f38.js",
+    "runtime-main.js.map": "/AnnVasilyeva/neon_button.git/static/js/runtime-main.27b22f38.js.map",
+    "static/js/2.f54c8616.chunk.js": "/AnnVasilyeva/neon_button.git/static/js/2.f54c8616.chunk.js",
+    "static/js/2.f54c8616.chunk.js.map": "/AnnVasilyeva/neon_button.git/static/js/2.f54c8616.chunk.js.map",
+    "static/js/3.073cae9f.chunk.js": "/AnnVasilyeva/neon_button.git/static/js/3.073cae9f.chunk.js",
+    "static/js/3.073cae9f.chunk.js.map": "/AnnVasilyeva/neon_button.git/static/js/3.073cae9f.chunk.js.map",
+    "index.html": "/AnnVasilyeva/neon_button.git/index.html",
+    "static/css/main.e23629c4.chunk.css.map": "/AnnVasilyeva/neon_button.git/static/css/main.e23629c4.chunk.css.map",
+    "static/js/2.f54c8616.chunk.js.LICENSE.txt": "/AnnVasilyeva/neon_button.git/static/js/2.f54c8616.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27b22f38.js",
+    "static/js/2.f54c8616.chunk.js",
+    "static/css/main.e23629c4.chunk.css",
+    "static/js/main.efa09587.chunk.js"
+  ]
+}
