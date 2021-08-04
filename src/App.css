@@ -1,0 +1,67 @@
+.neon-button {
+  font-size: 4em;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: .125em solid var(--clr-neon);
+  border-radius: .25em;
+  padding: .25em 1em;
+  text-shadow:
+  0 0 .125em hsl(0 0% 100% / .3), 
+  0 0 .45em currentColor;
+
+  box-shadow: inset 0 0 .5em 0 currentColor, 
+  0 0 .5em 0 currentColor;
+  position: relative;
+
+  
+}
+
+.neon-button::before {
+  /* чтобы поинтер не срабатывал на подсветке а только на кнопке */
+  pointer-events: none;
+
+  content: '';
+  position: absolute;
+  background-color: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* форма нижней подсветки */
+  transform: perspective(1em) rotateX(40deg) scale(1, .35);
+  /* размывка нижней подсветки */
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--clr-neon);
+  box-shadow: 0 0 2em .5em var(--clr-neon);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover, 
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
