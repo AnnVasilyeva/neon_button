@@ -65,3 +65,60 @@
 .neon-button:focus::after {
   opacity: 1;
 }
+
+/* анимация мерцания */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 100px var(--clr-neon);
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+
+/* анимации пульсации */
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px var(--clr-neon),
+      0 0 11px var(--clr-neon),
+      0 0 19px var(--clr-neon),
+      0 0 40px var(--clr-neon),
+      0 0 80px var(--clr-neon),
+      0 0 90px var(--clr-neon),
+      0 0 100px var(--clr-neon),
+      0 0 150px var(--clr-neon);
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 2px var(--clr-neon),
+      0 0 4px var(--clr-neon),
+      0 0 6px var(--clr-neon),
+      0 0 10px var(--clr-neon),
+      0 0 45px var(--clr-neon),
+      0 0 55px var(--clr-neon),
+      0 0 70px var(--clr-neon),
+      0 0 80px var(--clr-neon);
+  }
+}
+
+.neon-text {
+  margin-bottom: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: var(--clr-neon);
+  text-shadow: 0 0 50px var(--clr-neon);
+  /* анимация мерцания */
+  /* animation: flicker 1.5s infinite alternate; */
+
+  /* анимации пульсации */
+  /* animation: pulsate 2.5s infinite alternate; */
+
+  /* легкое мерцание */
+  /* animation: pulsate 0.11s ease-in-out infinite alternate; */
+  
+}
+
